@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/e252d07dd4.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <div class="score-board">
+      <div id="user-label" class="badge">user</div>
+      <div id="computer-label" class="badge">comp</div>
+      <!-- this will make the scores look side by side  -->
+      <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
+
+    <div class="result">
+      <p>Paper covers rock. You Win!</p>
+    </div>
+
+    <div class="choices">
+      <div class="choice" id="r">
+        <i class="fas fa-hand-rock fa-7x" id="rock"></i>
+      </div>
+      <div class="choice" id="s">
+        <i class="fas fa-hand-scissors fa-7x" id="scissors"></i>
+      </div>
+      <div class="choice" id="p">
+        <i class="fas fa-hand-paper fa-7x" id="paper"></i>
+      </div>
+    </div>
+
+    <p id="action-message">Make Your Move!</p>
+    <div id="closeit">
+      <button id="magic">Restart The Game!</button>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
